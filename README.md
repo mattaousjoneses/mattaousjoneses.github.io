@@ -28,7 +28,7 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-how does this work: https://mattaousjoneses.github.io/MattVSHTMLPage1.html
+how does this work: [Real Web-Page](https://mattaousjoneses.github.io/MattVSHTMLPage1.html).
 
 ### Jekyll Themes
 
