@@ -82,6 +82,7 @@
                     </div>
 
                     <h2 id="welcome">Welcome to my Github Homepage!</h2>
+                    <br />
                     <p id="mydescription" style="text-indent: 2em">
                         I am a young software developer currently living in the Greater Pittsburgh area in Pennsylvania.
                         I work mostly with C# and Java; but I have experience with <a href="https://www.hackerrank.com/certificates/554ee7c3a84a">SQL</a>, Javascript, C, C++, and Assembly.
@@ -105,16 +106,23 @@
         </main>
     </div>
 
+
+
     <footer>
-        <span class="credits left">
-            Built and Maintained by 
-            <a href="https://github.com/mattaousjoneses">Matt Jones</a>
+
+        <span id="BMU" class="credits left">
+            Built and Maintained by
+            <a href="https://github.com/mattaousjoneses">Matt Jones, Last Updated: </a>
         </span>
-        
+
         <span class="credits right" style="float:right;">
-            Hosted on Github Pages -- Theme by 
+            Hosted on Github Pages -- Theme by
             <a href="https://twitter.com/michigaengraham">Matt Graham</a>
-        </span>    
+        </span>
     </footer>
+    <script>
+        let updated = Date(document.lastModified);
+        document.getElementById("BMU").innerHTML += " " + updated;
+    </script>
 </body>
 </html>
