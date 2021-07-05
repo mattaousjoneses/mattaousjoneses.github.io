@@ -32,13 +32,28 @@
 
     <style>
         body {
-            margin: 0;
+            display: table;
+            width: 100%;
         }
-        main{
-            min-height: calc(100vh-4rem);
+
+        html, body {
+            height: 100%;
         }
-        footer {
-            height: 4rem;
+
+        .main {
+            height: 100%;
+            width: 100%;
+            padding-bottom: 20px;
+            background: #eee;
+            display: table-row;
+        }
+
+        .footer {
+            /*height:30px;*/
+            line-height: 30px;
+            width: 100%;
+            background: #00f0ad;
+            display: table-row;
         }
     </style>
 
@@ -71,9 +86,9 @@
                 <p>
                     At my current job, <a href="https://windurance.com/">Windurance</a> Software Engineer, I've built a desktop application for .NET
                     Core using C# that communicates with unsupported power storage units inside wind turbine hubs throughout the U.S., but mostly in Texas.
-                    I designed the application from the GUI to bit signal decoding, and was responsible for figuring out what all the signals
-                    the unit would respond to, what those signals meant, and what to send back when.
-                    My formal resume, along with LinkedIn and Github pages, are linked at the top - and my general facts / interests below.
+                    I designed the application from the GUI to bit signal decoding, and was responsible for figuring out what 4-byte messages
+                    the unit would respond to, what the messages back and forth meant, and from there gaining actual functionality as a real-time data representation.
+                    My formal resume, along with LinkedIn and Github pages, are linked at the top - and my general facts, interests, or whatever else below.
                 </p>
 
                 <p>
