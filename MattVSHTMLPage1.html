@@ -31,74 +31,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <style>
-        body {
-            display: table;
-            width: 100%;
-        }
-
-        html, body {
+        body, html, .wrap {
             height: 100%;
         }
 
-        .main {
-            height: 100%;
-            width: 100%;
-            padding-bottom: 20px;
-            background: #eee;
-            display: table-row;
-        }
+            body > .wrap {
+                height: auto;
+                min-height: 100%;
+            }
+
+            .wrap:after {
+                content: "";
+                display: block;
+                height: 100px;
+            }
 
         .footer {
-            /*height:30px;*/
-            line-height: 30px;
-            width: 100%;
-            background: #00f0ad;
-            display: table-row;
+            background: #662e8c;
+            margin-top: -100px;
+            height: 100px;
+            color: #fff;
+            position: relative;
+            line-height: 180%;
+            padding: 0 10px;
         }
     </style>
 
 </head>
 <body>
-    <div id="header">
-        <nav>
-            <li class="fork">
-                <a href="https://www.linkedin.com/in/mattaousjoneses">LinkedIn</a>
-                <a href="https://github.com/mattaousjoneses/mattaousjoneses.github.io">GitHub</a>
-            </li>
-        </nav>
-    </div>
-    <main>
-        <div class="wrapper">
-            <section>
-                <div id="Title">
-                    <h1>Matthew Jones, Software Developer</h1>
-                    <hr>
-
-                </div>
-
-                <h2 id="welcome">Welcome to my Github Homepage!</h2>
-                <p id="mydescription">
-                    I am a young software developer currently living in the Greater Pittsburgh area in Pennsylvania.
-                    I work mostly with C# and Java; but I have experience with <a href="https://www.hackerrank.com/certificates/554ee7c3a84a">SQL</a>, Javascript, PHP, C, C++, and Assembly.
-                    Also, I am familiar with .NET, <a href="https://courses.edx.org/certificates/9d461593c8164c4f91676185b8a7d41d">Agile Methodologies</a>, Github / Git, Unit Testing / Moq, JQuery / JS Node, and ReST API.
-                </p>
-
-                <p>
-                    At my current job, <a href="https://windurance.com/">Windurance</a> Software Engineer, I've built a desktop application for .NET
-                    Core using C# that communicates with unsupported power storage units inside wind turbine hubs throughout the U.S., but mostly in Texas.
-                    I designed the application from the GUI to bit signal decoding, and was responsible for figuring out what 4-byte messages
-                    the unit would respond to, what the messages back and forth meant, and from there gaining actual functionality as a real-time data representation.
-                    My formal resume, along with LinkedIn and Github pages, are linked at the top - and my general facts, interests, or whatever else below.
-                </p>
-
-                <p>
-
-                </p>
-
-            </section>
+    <div class="wrap" ">
+        <div id="header">
+            <nav>
+                <li class="fork">
+                    <a href="https://www.linkedin.com/in/mattaousjoneses">LinkedIn</a>
+                    <a href="https://github.com/mattaousjoneses/mattaousjoneses.github.io">GitHub</a>
+                </li>
+            </nav>
         </div>
-    </main>
+        <main>
+            <div class="wrapper">
+                <section>
+                    <div id="Title">
+                        <h1>Matthew Jones, Software Developer</h1>
+                        <hr>
 
+                    </div>
+
+                    <h2 id="welcome">Welcome to my Github Homepage!</h2>
+                    <p id="mydescription">
+                        I am a young software developer currently living in the Greater Pittsburgh area in Pennsylvania.
+                        I work mostly with C# and Java; but I have experience with <a href="https://www.hackerrank.com/certificates/554ee7c3a84a">SQL</a>, Javascript, PHP, C, C++, and Assembly.
+                        Also, I am familiar with .NET, <a href="https://courses.edx.org/certificates/9d461593c8164c4f91676185b8a7d41d">Agile Methodologies</a>, Github / Git, Unit Testing / Moq, JQuery / JS Node, and ReST API.
+                    </p>
+
+                    <p>
+                        At my current job, <a href="https://windurance.com/">Windurance</a> Software Engineer, I've built a desktop application for .NET
+                        Core using C# that communicates with unsupported power storage units inside wind turbine hubs throughout the U.S., but mostly in Texas.
+                        I designed the application from the GUI to bit signal decoding, and was responsible for figuring out what 4-byte messages
+                        the unit would respond to, what the messages back and forth meant, and from there gaining actual functionality as a real-time data representation.
+                        My formal resume, along with LinkedIn and Github pages, are linked at the top - and my general facts, interests, or whatever else below.
+                    </p>
+
+                    <p>
+
+                    </p>
+
+                </section>
+            </div>
+        </main>
+    </div>
 
     <footer>
         <span class="credits left">
